@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <style>
+        /* Your custom CSS styles go here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cool-background {
+            background-image: linear-gradient(45deg, #007BFF, #00C8FF);
+        }
+
+        h1 {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        .pass {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .fail {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .cool-btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .cool-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add more CSS styles to customize the table and other elements */
+    </style>
+</head>
+
+<body class="cool-background">
+    <h1>Test Results</h1>
+    <table>
+        <tr>
+            <th>Test Case</th>
+            <th>Result</th>
+            <th>Details</th>
+        </tr>
+        <tr class="pass">
+            <td>Test creating a new invoice using the API</td>
+            <td>Pass</td>
+            <td>No errors, new invoice created successfully.</td>
+        </tr>
+        <tr class="pass">
+            <td>Test retrieving a list of invoices using the API</td>
+            <td>Pass</td>
+            <td>No errors, retrieved one invoice as expected.</td>
+        </tr>
+        <tr class="pass">
+            <td>Test retrieving details of a specific invoice using the API</td>
+            <td>Pass</td>
+            <td>No errors, retrieved details of the specific invoice as expected.</td>
+        </tr>
+        <tr class="pass">
+            <td>Test updating an existing invoice using the API</td>
+            <td>Pass</td>
+            <td>No errors, existing invoice updated successfully.</td>
+        </tr>
+        <tr class="pass">
+            <td>Test deleting an existing invoice using the API</td>
+            <td>Pass</td>
+            <td>No errors, existing invoice deleted successfully.</td>
+        </tr>
+        <!-- Add more test cases as needed based on your requirements -->
+    </table>
+    <div style="text-align: center; margin-top: 20px;">
+        <button class="cool-btn">Run Tests Again</button>
+    </div>
+</body>
+
+</html>

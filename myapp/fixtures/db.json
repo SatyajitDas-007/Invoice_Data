@@ -1,0 +1,33 @@
+[
+    {
+        "model": "myapp.invoice",
+        "pk": 1,
+        "fields": {
+            "date": "2023-08-01",
+            "invoice_no": "INV-001",
+            "customer_name": "John Doe"
+        }
+    },
+    {
+        "model": "myapp.invoicedetail",
+        "pk": 1,
+        "fields": {
+            "invoice": 1,
+            "description": "Item 1",
+            "quantity": 2,
+            "unit_price": "10.00",
+            "price": "20.00"
+        }
+    },
+    {
+        "model": "myapp.invoicedetail",
+        "pk": 2,
+        "fields": {
+            "invoice": 1,
+            "description": "Item 2",
+            "quantity": 3,
+            "unit_price": "5.00",
+            "price": "15.00"
+        }
+    }
+]
